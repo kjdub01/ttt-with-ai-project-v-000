@@ -44,8 +44,11 @@ puts "\n"
     else
       Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
     end
-    
-    puts "Would you like to play again? (Y/n)"
+  end
+end
+
+def start_again?
+puts "Would you like to play again? (Y/n)"
     answer = gets.strip
     if answer.downcase == "y"
       mode
@@ -54,7 +57,8 @@ puts "\n"
       puts "GOODBYE!"
       gets
       exit!
-  end
 end
+      
 
 mode
+start again?
