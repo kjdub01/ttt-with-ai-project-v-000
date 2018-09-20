@@ -65,9 +65,4 @@ class Game
       puts "Cat's Game!"
     end
   end
-  
-  def start_again?
-    
-    end
-  end
 end
