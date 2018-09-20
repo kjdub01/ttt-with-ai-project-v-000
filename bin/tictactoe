@@ -48,7 +48,19 @@ puts "\n"
 end
 
 def start_again?
-  puts "Would you like to play again? (Y/n)"
+  Would you like to play again? (Y/n)"
+  answer = gets.strip
+  
+  if answer.downcase == "yes" || "y"
+    mode
+end
+      
+
+mode
+start again?
+
+
+puts "Would you like to play again? (Y/n)"
   answer = gets.strip
   if answer.downcase == "y"
     mode
@@ -56,8 +68,3 @@ def start_again?
     system("clear")
     puts "GOODBYE!"
   end
-end
-      
-
-mode
-start again?
