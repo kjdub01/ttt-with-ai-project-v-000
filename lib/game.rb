@@ -65,6 +65,7 @@ class Game
     else draw?
       puts "Cat's Game!"
     end
+    start_again?
   end
   
    def start_again?
