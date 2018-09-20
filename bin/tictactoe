@@ -47,17 +47,17 @@ puts "\n"
   end
 end
 
-def start_again?
-  Would you like to play again? (Y/n)"
-  answer = gets.strip
+#def start_again?
+  #Would you like to play again? (Y/n)"
+  #answer = gets.strip
   
-  if answer.downcase == "yes" || "y"
-    mode
-end
+  #if answer.downcase == "yes" || "y"
+  #  mode
+#end
       
 
 mode
-start again?
+#start again?
 
 
 #puts "Would you like to play again? (Y/n)"
