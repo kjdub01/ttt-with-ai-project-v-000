@@ -11,7 +11,6 @@ module Players
         elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
           computer_move = 2
         else
-          # computer_move = (1..9).detect { |n| board.valid_move?(n) }
           Game::WIN_COMBINATIONS.detect do |combo|
             if  combo.select{|i| board.position(i+1) == token}.size == 2 && combo.any?{|i| board.position(i+1) == " "}
               computer_move = combo.select{|i| !board.taken?(i+1)}.first.to_i.+(1)
