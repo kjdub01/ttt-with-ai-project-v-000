@@ -62,10 +62,11 @@ class Game
     end
     if winner
       puts "Congratulations #{winner}!"
+      start_again?
     else draw?
       puts "Cat's Game!"
+      start_again?
     end
-    start_again?
   end
   
    def start_again?
