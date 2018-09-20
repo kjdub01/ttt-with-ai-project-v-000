@@ -66,4 +66,18 @@ class Game
       puts "Cat's Game!"
     end
   end
+  
+   def start_again?
+    puts "Would you like to play again? (Y/n)"
+    answer = gets.strip
+    if answer.downcase == "y"
+      mode
+    elsif answer.downcase == "n" || answer.downcase == "quit" || answer.downcase == "exit"
+      system("clear")
+      puts "GOODBYE!"
+      gets
+      exit!
+    end
+  end
+
 end
