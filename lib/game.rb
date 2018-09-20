@@ -48,7 +48,6 @@ class Game
     input = current_player.move(board)
     if board.valid_move?(input)
       board.update(input, current_player)
-      board.display
     else
       puts "try again."
       turn
@@ -56,6 +55,7 @@ class Game
   end
   
   def play
+    board.display
     until over?
       turn
     end
