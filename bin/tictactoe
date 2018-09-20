@@ -44,7 +44,7 @@ puts "\n"
     else
       Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
     end
-    
+    Game.start_again?
   end
 end
 
