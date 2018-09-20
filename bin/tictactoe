@@ -40,6 +40,7 @@ puts "\n"
   
     puts "You have selected '#{starts}' to start the game as 'Player X'"
     if starts.downcase == "player1"
+    board.display
       Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
     else
       Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new).play
